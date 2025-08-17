@@ -8,6 +8,8 @@
 #   evaluates the model, and saves it for later use.
 ###############################################################
 
+
+
 # 1) Load packages
 suppressPackageStartupMessages({
   library(tidyverse)
@@ -19,7 +21,8 @@ suppressPackageStartupMessages({
 set.seed(42)
 
 # 2) Load dataset
-data_path <- "../data/flight_delays.csv"
+getwd()
+data_path <- "GitHub/Flight-Delay-Prediction/data/flight_delays.csv"
 raw <- read_csv(data_path, show_col_types = FALSE)
 
 # 3) Clean and preprocess
